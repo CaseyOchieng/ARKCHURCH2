@@ -30,3 +30,14 @@ window.addEventListener("load", () => {
       "<"
     );
 });
+
+
+// The Title changer
+let title = document.title;
+window.addEventListener("blur", () => {
+  document.title = title = "Thank You 🕺💃";
+});
+//Leave it if you dont know how it works
+window.addEventListener("focus", () => {
+  document.title = title = "ARK Youth Church";
+});
