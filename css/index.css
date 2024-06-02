@@ -2,26 +2,42 @@
 
 @font-face {
   font-display: block;
-  font-family: Mori;
+  font-family: Circe_Bold;
   font-style: normal;
   font-weight: 400;
-  src: url(https://assets.codepen.io/16327/PPMori-Regular.woff) format("woff");
+  src: url(/fonts/Circe/Circe-Bold.woff2) format("woff");
 }
 
 @font-face {
   font-display: block;
-  font-family: Mori;
+  font-family: Circe-ExtraBold;
   font-style: normal;
   font-weight: 600;
-  src: url(https://assets.codepen.io/16327/PPMori-SemiBold.woff) format("woff");
+  src: url(/fonts/Circe/Circe-ExtraBold.woff2) format("woff");
 }
 
 @font-face {
   font-display: block;
-  font-family: Fraktion Mono;
+  font-family: Circe_Extra_Light;
   font-style: normal;
   font-weight: 400;
-  src: url(https://assets.codepen.io/16327/PPFraktionMono-Bold.woff) format("woff");
+  src: url(/fonts/Circe/CRC25.woff2) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Circe_Light;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Circe/CRC35.woff2) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Circe/CRC55.woff2) format("woff");
 }
 
 :root {
