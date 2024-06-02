@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ark Youth Church",
+  "name": "Ark Youth Church",
+  "description": "Ark Youth Church",
   "icons": [
     {
       "src": "favicon.ico",
