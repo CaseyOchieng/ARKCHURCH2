@@ -39,5 +39,5 @@ window.addEventListener("blur", () => {
 });
 //Leave it if you dont know how it works
 window.addEventListener("focus", () => {
-  document.title = title = "ARK Youth Church";
+  document.title = title = "Ark Youth Church";
 });
