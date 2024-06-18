@@ -1,15 +1,15 @@
-const lenis = new Lenis();
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
 gsap.registerPlugin(ScrollTrigger);
 
 let images = gsap.utils.toArray("img");
 let text = gsap.utils.toArray(".st0");
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".animated",
+    start: "top center",
+    end: "bottom bottom",
+    scrub: 2,
+  },
+});
 
 images.forEach((image) => {
   gsap.to(image, {
@@ -20,7 +20,22 @@ images.forEach((image) => {
     },
   });
 });
+tl.to(text, {
+  strokeDashoffset: 0,
+}).to(text, {
+  strokeDashoffset: 470,
+});
 
+// smooth scrolling
+
+const lenis = new Lenis();
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
 lenis.on("scroll", (e) => {
   console.log(e);
 });
@@ -33,7 +48,3 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 // smooth scrolling
-
-lenis.on("scroll", (e) => {
-  console.log(e);
-});

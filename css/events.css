@@ -25,3 +25,51 @@ section {
     transform: translate(-50%, -50%);
   }
 }
+.st0 {
+  stroke-dasharray: 470;
+  stroke-dashoffset: 470;
+  animation: dash 3s linear forwards;
+  stroke: white;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+  section {
+    padding: 0 2em;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+  }
+
+  section img {
+    width: 80%;
+    height: auto;
+  }
+
+  section svg {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  section img {
+    width: 100%;
+  }
+
+  section svg {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  section svg {
+    width: 90%;
+  }
+}
