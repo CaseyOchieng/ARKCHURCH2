@@ -1,5 +1,6 @@
 console.clear();
 
+//Animations for the landing page
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {
@@ -46,6 +47,15 @@ window.addEventListener("load", () => {
       transformOrigin: "center center",
       ease: "power1.inOut",
     })
+    .to(
+      ".section.hero",
+      {
+        scale: 1.1,
+        transformOrigin: "center center",
+        ease: "power1.inOut",
+      },
+      "<"
+    )
     .to(
       ".section.hero",
       {
