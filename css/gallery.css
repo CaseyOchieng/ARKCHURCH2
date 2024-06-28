@@ -75,7 +75,7 @@ p {
   display: grid;
   place-items: center;
   height: 129.8rem;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .hero__title {
@@ -200,6 +200,7 @@ p {
   place-items: center;
   min-height: 100vh;
   padding: 24rem 0;
+  background-color: whitesmoke;
 }
 
 .join-us__inner {
