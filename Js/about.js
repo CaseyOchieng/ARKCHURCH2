@@ -48,3 +48,13 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 // smooth scrolling
+
+// The Title changer
+let title = document.title;
+window.addEventListener("blur", () => {
+  document.title = title = "Thank you for visiting us";
+});
+//Leave it if you dont know how it works
+window.addEventListener("focus", () => {
+  document.title = title = "Ark Youth Church";
+});

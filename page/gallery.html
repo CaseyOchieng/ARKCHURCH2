@@ -60,12 +60,8 @@
       defer
       src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"
     ></script>
-    <script defer src="/Js/gallery.js"></script>
     <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
     <title>Ark Youth Church</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
   </head>
   <body>
     <section class="hero">
@@ -74,28 +70,20 @@
           <span>G</span>
           <span>a</span>
           <span>l</span>
-         <span class="outlined-text">l</span>
-         <span class="outlined-text">e</span>
-         <span class="outlined-text">r</span>
-         <span class="outlined-text">y</span>
+          <span>l</span>
+          <span>e</span>
+          <span>r</span>
+          <span>y</span>
         </div>
       </h1>
       <div class="hero__images">
-        <img src="/asset/images/pic/4.jpg" />
-        <img src="/asset/images/pic/3.jpg" />
-        <img src="/asset/images/pic/2.jpg" />
-        <img src="/asset/images/pic/14.jpg" />
-        <img src="/asset/images/pic/5.jpg" />
-        <img src="/asset/images/pic/6.jpg" />
-        <img src="/asset/images/pic/7.jpg" />
-
-        <!-- <img src="/asset/images/gallery/Photo1.jpg" />
-        <img src="/asset/images/gallery/Photo2.jpg" />
-        <img src="/asset/images/gallery/Photo3.jpg" />
-        <img src="/asset/images/gallery/Photo4.jpg" />
-        <img src="/asset/images/gallery/Photo5.jpg" />
-        <img src="/asset/images/gallery/Photo6.jpg" />
-        <img src="/asset/images/gallery/Photo7.jpg" /> -->
+        <img src="/asset/images/pic/4.jpg" data-hidden />
+        <img src="/asset/images/pic/3.jpg" data-hidden />
+        <img src="/asset/images/pic/2.jpg" data-hidden />
+        <img src="/asset/images/pic/14.jpg" data-hidden />
+        <img src="/asset/images/pic/5.jpg" data-hidden />
+        <img src="/asset/images/pic/6.jpg" data-hidden />
+        <img src="/asset/images/pic/7.jpg" data-hidden />
       </div>
     </section>
     <section class="text-block">
@@ -118,21 +106,27 @@
         </div>
         <div class="text__effect">
           <div class="text__overlay"></div>
-          <p>#OutdoorLiving at its finest.</p>
+          <p>#<span>ArkYouthchurch</span> at its finest.</p>
         </div>
       </div>
     </section>
     <section class="fullwidth-image">
       <div class="fullwidth-image__overlay"></div>
       <div class="fullwidth-image__text">
-        <h2>2023 collection</h2>
+        <h2>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Photo Gallery
+        </h2>
         <p>
-          Our new collection is everything you need for your next adventure.
-          Made to be flexible, breathable and long lasting so you can enjoy more
-          of the #OutdoorLiving.
+          Join us at #ArkYouthChurch and explore our exciting new photo gallery,
+          showcasing all our adventures. See the fun, joy, and memories we
+          create with flexible, breathable, and long-lasting gear. Come
+          experience the excitement at Ark Youth Church!
         </p>
       </div>
-      <img src="./images/fullwidth.jpg" />
+      <img src="../asset/images/pic/1.jpg" />
     </section>
     <section class="join-us">
       <div class="join-us__inner">
@@ -146,6 +140,7 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
+                class="St0"
                 d="M1.40051 2.37525C1.40051 2.37525 68.8688 48.875 223.369 20.375C377.869 -8.125 633.4 12.3911 633.4 12.3911"
                 stroke="black"
                 stroke-width="4"
@@ -160,4 +155,9 @@
       </div>
     </section>
   </body>
+  <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="/Js/gallery.js"></script>
 </html>
