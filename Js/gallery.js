@@ -169,3 +169,8 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
   document.title = "Ark Youth Church";
 });
+
+function Linkstogallery() {
+  window.location.href =
+    "https://thearkyouthchurch.pixieset.com/stagesofdishonour/";
+}
