@@ -110,30 +110,35 @@ p {
   top: 0;
   left: 61.1rem;
 }
+
 .hero img:nth-child(3) {
   width: 35.1rem;
   height: 23.4rem;
   top: 0;
   right: 8rem;
 }
+
 .hero img:nth-child(4) {
   width: 37.4rem;
   height: 55.9rem;
   top: 16.8rem;
   right: 47.8rem;
 }
+
 .hero img:nth-child(5) {
   width: 35.1rem;
   height: 23.4rem;
   top: 65.9rem;
   left: 47.8rem;
 }
+
 .hero img:nth-child(6) {
   width: 24.1rem;
   height: 36.1rem;
   top: 93.7rem;
   left: 21.3rem;
 }
+
 .hero img:nth-child(7) {
   width: 63.9rem;
   height: 42.5rem;
@@ -151,6 +156,7 @@ p {
 }
 
 .fullwidth-image {
+  background-color: whitesmoke;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -221,6 +227,44 @@ p {
   margin-bottom: 6.4rem;
 }
 
+/* Particles */
+.join-us__button {
+  margin-top: 6.4rem;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.join-us__button:hover {
+  background-color: white;
+  color: black;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(188, 78, 78, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-200px, -200px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Particles */
 .mission {
   display: inline-block;
   position: relative;
@@ -244,9 +288,11 @@ button {
   font-family: inherit;
   letter-spacing: -0.01em;
 }
+
 .text__effect {
   position: relative;
 }
+
 .text__overlay {
   display: block;
   position: absolute;

@@ -67,6 +67,10 @@ window.addEventListener("load", () => {
     );
 });
 
+function toggleMobileMenu() {
+  document.getElementById("menu").classList.toggle("active");
+}
+
 // The Title changer
 let title = document.title;
 window.addEventListener("blur", () => {

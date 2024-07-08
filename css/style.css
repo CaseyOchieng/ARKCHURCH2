@@ -4,6 +4,150 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base: #555;
+  --base-100: #f1f1f1;
+  --base-400: #555;
+  --base-800: #000;
+  --yellow: #ffda00;
+  --yellow-100: #fffbe6;
+  --yellow-400: #ffda4b;
+  --yellow-800: #8b6f00;
+  --blue: #0a61ae;
+  --blue-100: #e2f8ff;
+  --blue-400: #61dafb;
+  --blue-800: #0a61ae;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-holder {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  font-weight: 800;
+  color: var(--base-800);
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: var(--base-800);
+  color: var(--base-100);
+  height: 64px;
+  width: 64px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+}
+
+li {
+  display: flex;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--base);
+}
+
+a:hover {
+  background-color: var(--base-100);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.mobile-toggle {
+  display: none;
+  color: var(--base-800);
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  ul a {
+    width: 100%;
+  }
+}
+
 .wrapper,
 .content {
   position: relative;
@@ -21,7 +165,6 @@
 }
 
 .content .section.hero {
-  background-image: url(https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

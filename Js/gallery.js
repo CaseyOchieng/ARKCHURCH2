@@ -170,6 +170,37 @@ window.addEventListener("focus", () => {
   document.title = "Ark Youth Church";
 });
 
+// Leave it if you dont know how it works
+const button = document.querySelector(".join-us__button");
+
+button.addEventListener("mouseover", (e) => {
+  const rect = button.getBoundingClientRect();
+  for (let i = 0; i < 100; i++) {
+    createParticle(e.clientX - rect.left, e.clientY - rect.top, button);
+  }
+});
+
+function createParticle(x, y, container) {
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
+  container.appendChild(particle);
+
+  particle.style.left = `${x}px`;
+  particle.style.top = `${y}px`;
+  const size = Math.random() * 10 + 5;
+  particle.style.width = `${size}px`;
+  particle.style.height = `${size}px`;
+
+  particle.style.transform = `translate(-50%, -50%) translate(${
+    Math.random() * 200 - 100
+  }px, ${Math.random() * 200 - 100}px)`;
+
+  setTimeout(() => {
+    particle.remove();
+  }, 3000);
+}
+// Link to gallery
+
 function Linkstogallery() {
   window.location.href =
     "https://thearkyouthchurch.pixieset.com/stagesofdishonour/";
